@@ -1,0 +1,59 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que o visitante pesquise e filtre a lista de ações por:
+• Palavra-chave (título, descrição)
+• Data (intervalo)
+• Local (cidade/bairro)
+• Categoria/objetivo (ex.: doação de alimentos, voluntariado)
+• Status (ativa, futura, concluída)
+
+A busca deve suportar ordenação por: mais recentes, mais relevantes e mais populares. Resultados paginados com 10 itens por página (configurável).",5,5,5,5
+RF-02,"Em cada página de ação o sistema deve exibir métricas públicas verificadas:
+• Total arrecadado (somente valores confirmados)
+• Número de doadores confirmados
+• Número de inscritos/voluntários
+
+Os valores exibidos devem ser atualizados em tempo razoável (no máximo 5 minutos após confirmação).",5,4,5,5
+RF-03,"O sistema deve prover, na página de cada ação, um formulário público onde visitantes enviem interesse em contribuir (itens, serviços, voluntariado). O formulário deve solicitar:
+• Nome (opcional para visitantes anônimos) ou vínculo com conta (se logado)
+• Contato (e-mail e/ou telefone)
+• Tipo de contribuição (itens, tempo voluntário, oferta de serviços)
+• Mensagem detalhada
+
+Ao enviar, gera-se uma notificação no painel administrativo e um e-mail de confirmação ao remetente (se informado).",5,4,5,5
+RF-04,"Visitantes poderão curtir (like) uma ação; o sistema deverá:
+• Registrar uma única curtida por pessoa/conta (usar cookie+IP+conta para reduzir fraudes)
+• Exibir contador público de curtidas
+• Permitir compartilhamento via botões (WhatsApp, Facebook, X, cópia de link)",5,5,5,5
+RF-05,"O sistema deve permitir comentários públicos em ações. Regras:
+• Comentários de visitantes passam por moderação (estado: pendente → aprovado/rejeitado)
+• Moderadores (admins) recebem alerta de novos comentários pendentes
+• Comentários sinalizados por usuários ficam pendentes de revisão
+• Limitar tamanho do comentário (ex.: 1000 caracteres) e prevenir XSS/HTML não sanitizado",5,5,5,5
+RF-06,"Administradores devem poder Criar, Ler, Atualizar, Excluir e Publicar/Despublicar ações. Todas alterações críticas devem ser registradas com:
+• Quem realizou a alteração (usuário)
+• Timestamp
+• Campo alterado e valor anterior/novo
+
+O histórico deve ser acessível no painel de cada ação (audit trail).",4,4,5,5
+RF-07,"O sistema deve suportar papéis administrativos com controle granular:
+• SuperAdmin (todas as permissões, incl. gestão de outros admins)
+• Editor (criar/editar/gerenciar conteúdo)
+• Financeiro (acesso a dados de doações, relatórios financeiros)
+
+O SuperAdmin deve poder atribuir/remover papéis.",4,4,4,5
+RF-08,"O painel administrativo deve gerar relatórios customizáveis por período com:
+• Doações por forma de pagamento
+• Total arrecadado por ação
+• Recorrência de doadores
+
+Relatórios exportáveis em CSV e PDF e com opção de filtragem por status e tags.",4,4,5,5
+RF-09,"No painel de doações o admin deve:
+• Visualizar lista com filtros (doador, valor, data, forma, status)
+• Confirmar/recusar/estornar doações
+• Anexar/visualizar comprovantes (upload)
+• Gerar recibo/impressão de comprovante em PDF (com dados da instituição)
+• Registrar conciliações manuais (comentários e histórico)",5,5,5,5
+RF-10,"O sistema deve permitir que cada ação tenha um QR Code Pix opcional. Regras:
+• Cada QR tem associação a um identificador imutável (versão) e data de validade opcional
+• Alteração da chave Pix ou QR gera nova versão e registra no audit log (sem sobrescrever histórico)
+• O painel deve exibir versões anteriores e permitir marcar versão como “ativa”/“inativa”",4,5,5,4

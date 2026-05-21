@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que o usuário crie e edite uma conta, selecionando seu perfil de uso (""Paciente"" ou ""Estudante"") e armazenando dados básicos (idade, histórico médico resumido ou instituição de ensino).",5,5,5,5
+RF-02,"O sistema deve permitir o login seguro via e-mail/senha ou integração com redes sociais (Google/Apple), garantindo a proteção dos dados sensíveis de saúde conforme a legislação vigente (LGPD).",5,5,5,5
+RF-03,"O sistema deve permitir que o paciente registre métricas diárias manuais, como pressão arterial, frequência cardíaca, peso e nível de atividade física, gerando um histórico visual simples.",5,4.5,5,4
+RF-04,"O sistema deve permitir o cadastro de medicamentos de uso contínuo, configurando horários e dosagens, e deve enviar notificações push (alertas) para lembrar o usuário de tomar a medicação.",5,5,5,5
+RF-05,O sistema deve disponibilizar um recurso de acesso rápido que exibe ou disca automaticamente para contatos de emergência pré-cadastrados ou serviços de urgência locais.,5,5,5,4.5
+RF-06,"Com base nos dados da Triagem Inteligente, o sistema deve exibir dicas diárias de saúde (nutrição, exercícios leves, gestão de estresse) validadas por diretrizes médicas genéricas.",5,4.5,5,5
+RF-07,"O sistema deve oferecer um catálogo textual e visual detalhado sobre as principais doenças cardíacas e tipos de cirurgias (ex: Ponte de Safena, troca de válvula), servindo como material de apoio teórico para complementar a Visualização 2D.",4,4.5,4.5,4.5
+RF-08,"O sistema deve apresentar um dashboard para o perfil ""Estudante"", exibindo o histórico de pontuação nos quizzes, tópicos dominados e áreas que precisam de revisão.",4.5,4.5,4.5,4
+RF-09,"O sistema deve fornecer um glossário de termos técnicos de cardiologia, permitindo que o usuário busque definições rápidas ao encontrar termos complexos durante a navegação ou leitura.",5,4.5,4.5,4
+RF-10,"O sistema deve disponibilizar uma área de comunidade onde usuários podem criar tópicos para compartilhar histórias de superação ou dúvidas sobre tratamentos, com funcionalidades de ""curtir"" e ""comentar"".",5,4.5,5,5

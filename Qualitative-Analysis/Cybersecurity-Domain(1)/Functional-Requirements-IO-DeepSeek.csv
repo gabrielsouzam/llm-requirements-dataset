@@ -1,0 +1,45 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"A Aplicação deve:
+1. Configuração: Ler e validar o arquivo FakeNet-NG.xml, suportando overrides via linha de comando, validar configurações e reportar erros claros
+2. Serviços: Instanciar todos os Listeners configurados, permitir configuração de portas específicas, verificar conflitos de portas e suportar intervalos de portas
+3. Diverter: Inicializar o Diverter apenas se DivertTraffic estiver habilitado
+4. Monitoramento: Registrar todos os serviços em execução para monitoramento
+5. Perfis: Suportar múltiplos perfis de operação (ex: ""minimal"", ""comprehensive""), permitir ativação/desativação rápida de grupos de Listeners e oferecer configurações pré-definidas",5,4,5,5
+RF-02,"A Aplicação deve implementar um sistema de logging unificado que:
+1. Níveis de Log: Suporte múltiplos níveis (DEBUG, INFO, WARNING, ERROR)
+2. Destinos: Escreva logs para console e/ou arquivo baseado na configuração
+3. Formato: Inclua timestamp e identificador do componente em cada entrada
+4. Integração: Registre automaticamente todos os componentes no sistema de logging",5,5,5,5
+RF-03,"O Diverter deve:
+1. Interceptação: Interceptar pacotes baseado em regras configuráveis, suportando TCP, UDP e ICMP
+2. Redirecionamento: Redirecionar tráfego para Listeners apropriados por protocolo e porta, suportando localhost e interfaces específicas
+3. Gerenciamento de Estado: Manter tabelas de estado para conexões TCP, implementar reassemblagem de pacotes fragmentados e manter timeout configurável
+4. Captura: Respeitar a configuração DumpPackets para escrever arquivos .pcap quando habilitada",4,4.5,5,5
+RF-04,"O Diverter deve:
+1. Backup: Salvar o estado original da configuração de rede antes de modificações
+2. Restauração: Restaurar todas as configurações ao encerrar, mesmo em caso de falha
+3. Limpeza: Remover todas as regras de firewall e tabelas de roteamento adicionadas",4,4,4,5
+RF-05,"Todos os Listeners devem:
+1. Ciclo de Vida: Implementar métodos start(), stop() e taste()
+2. Status: Fornecer informações de status (porta, protocolo, estado)
+3. Configuração: Suportar configuração via arquivo XML
+4. Logging: Registrar-se automaticamente no sistema de logging",3.5,3,4,4
+RF-06,"Cada Listener deve:
+1. Respostas Configuráveis: Permitir configuração de respostas padrão, suportar modos de operação e permitir injeção de arquivos específicos
+2. Coleta de Dados: Capturar e logar todas as requisições, armazenar arquivos transferidos e manter estatísticas de tráfego
+3. Isolamento: Operar em contexto isolado para prevenir falhas em cascata",4,4,4.5,5
+RF-07,"O Proxy Listener deve:
+1. Roteamento Inteligente: Analisar tráfego inicial via taste(), encaminhar para o Listener com melhor match, manter cache de decisões e suportar fallback
+2. SSL/TLS: Implementar interceptação SSL/TLS, gerar certificados dinâmicos e gerenciar keystore de certificados falsos",4,4.5,4.5,5
+RF-08,"O DNS Listener deve:
+1. Resolução: Responder consultas para qualquer domínio com IPs configuráveis, suportando múltiplos tipos de registro (A, AAAA, MX, NS)
+2. Configuração: Permitir mapeamento personalizado domínio-IP via configuração
+3. Registro: Logar todas as consultas DNS recebidas",4,4,4,4
+RF-09,"O HTTP Listener deve:
+1. Protocolo HTTP: Simular respostas para métodos GET, POST, PUT, DELETE
+2. Content Serving: Servir arquivos locais baseado no caminho e suportar virtual hosting
+3. Captura: Capturar e logar headers, parâmetros e corpo das requisições",4.5,5,5,5
+RF-10,"O SMTP Listener deve:
+1. Simulação SMTP: Simular servidor SMTP funcional com suporte a comandos básicos (HELO, MAIL FROM, RCPT TO, DATA)
+2. Coleta: Aceitar e armazenar mensagens de email enviadas pelo malware
+3. Armazenamento: Salvar emails em formato .eml para análise posterior",4.5,5,5,5

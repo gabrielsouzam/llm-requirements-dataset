@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve exibir informações nutricionais detalhadas para cada prato ou item do cardápio, como calorias, macronutrientes e alergênicos principais (ex: glúten, lactose, castanhas).",5,5,5,5
+RF-02,O sistema deve permitir a visualização da lista completa de ingredientes que compõem cada prato ou opção do cardápio.,5,4,3.5,4
+RF-03,"O sistema deve permitir que a administração cadastre, edite e remova os cardápios das refeições (almoço e jantar) para datas específicas, associando os pratos e suas informações detalhadas.",5,5,5,5
+RF-04,"O sistema deve permitir que a administração mantenha um cadastro base de pratos, ingredientes, fornecedores e informações da equipe de cozinha, para composição dos cardápios.",4.5,4.5,4,4
+RF-05,"O sistema deve permitir que o aluno, ao chegar no restaurante, registre sua presença (check-in) para a refeição reservada ou indicada, via leitura de QR Code, matrícula ou biometria.",5,5,5,5
+RF-06,"O sistema deve fornecer uma interface para a administração ou portaria visualizar em tempo real as reservas confirmadas, registrar check-ins e controlar o acesso físico ao refeitório, gerenciando a fila de entrada.",4.5,5,4,4.5
+RF-07,"O sistema deve permitir que o aluno consulte seu histórico pessoal de refeições consumidas (check-ins realizados), incluindo data, horário e prato escolhido.",5,4.5,5,4
+RF-08,"O sistema deve enviar notificações (push, e-mail ou no aplicativo) aos alunos sobre confirmação de reserva, lembretes de refeição, alterações no cardápio e alertas sobre a presença de ingredientes que conflitem com suas restrições registradas.",5,5,5,5
+RF-09,"O sistema deve permitir que o aluno avalie e comente sobre a refeição após o consumo (check-in), fornecendo notas para critérios como sabor, apresentação e variedade.",5,4.5,5,5
+RF-10,"O sistema deve disponibilizar a visualização das avaliações médias e comentários públicos dos pratos, permitindo a ordenação por maior avaliação (ranking) para auxiliar na escolha.",5,5,5,4

@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que os usuários criem e mantenham perfis pessoais, incluindo informações básicas, histórico médico relevante, preferências de notificação e configurações de privacidade.",5,5,5,5
+RF-02,"O sistema deve possibilitar o agendamento de consultas em clínicas e hospitais a partir do mapa de localização, integrando-se com sistemas de agenda dos estabelecimentos de saúde.",5,5,5,4.5
+RF-03,"O sistema deve permitir o registro manual ou automático de sinais vitais como pressão arterial, frequência cardíaca, níveis de oxigenação e outros parâmetros cardiovasculares relevantes.",4.5,4.5,5,4.5
+RF-04,"O sistema deve gerar relatórios e gráficos de evolução da saúde do paciente ao longo do tempo, comparando métricas atuais com históricos anteriores.",5,4.5,5,5
+RF-05,"O sistema deve oferecer funcionalidade de lembretes de medicamentos, permitindo cadastrar horários, dosagens e frequência de remédios prescritos.",5,4.5,5,5
+RF-06,"O sistema deve disponibilizar uma biblioteca com materiais educativos sobre condições cardiovasculares, incluartigos, vídeos, infográficos e animações explicativas.",5,5,5,5
+RF-07,"O sistema deve fornecer um espaço de comunidade onde usuários podem compartilhar experiências, fazer perguntas e interagir com outros pacientes e estudantes.",5,4.5,5,5
+RF-08,O sistema deve enviar notificações proativas baseadas em alterações significativas nos parâmetros de saúde ou lembretes de cuidados preventivos.,3.5,4,4,4
+RF-09,"O sistema deve permitir a exportação de relatórios de saúde em formatos compatíveis com sistemas médicos (PDF, XML) para compartilhamento com profissionais de saúde.",5,5,5,5
+RF-10,"O sistema deve oferecer simulações interativas de procedimentos cardíacos comuns para fins educacionais, utilizando modelos 3D simplificados.",4.5,4.5,5,4.5

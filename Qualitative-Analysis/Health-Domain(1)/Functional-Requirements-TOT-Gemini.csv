@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve gerar recomendações personalizadas de dieta e exercícios físicos com base nos dados coletados na triagem, visando a prevenção ou controle de doenças cardiovasculares.",5,4.5,5,5
+RF-02,"O sistema deve permitir a visualização detalhada e interativa de artérias coronárias, destacando visualmente a presença de lesões, bloqueios e o impacto do fluxo sanguíneo para fins educativos.",4.5,4.5,5,5
+RF-03,"O sistema deve disponibilizar um repositório pesquisável de artigos, vídeos e glossários sobre saúde cardiovascular, categorizados por patologia e nível de complexidade (paciente ou estudante).",5,5,5,5
+RF-04,O sistema deve oferecer uma funcionalidade de acessibilidade que utiliza Inteligência Artificial para realizar a leitura em áudio dos textos informativos e diagnósticos exibidos na tela.,5,4.5,5,5
+RF-05,"O sistema deve armazenar cronologicamente os resultados das triagens e quizzes realizados pelo usuário, permitindo a visualização de gráficos de evolução da saúde ou do aprendizado ao longo do tempo.",5,4.5,4.5,4
+RF-06,"O sistema deve permitir que o usuário exporte um relatório completo em formato PDF, contendo o histórico de triagens e principais métricas monitoradas, para ser compartilhado com profissionais de saúde.",5,4,5,5
+RF-07,"O sistema deve enviar notificações push configuráveis para lembrar o usuário de realizar novas triagens, tomar medicamentos (se aplicável) ou ler novos conteúdos educativos relevantes ao seu perfil.",5,5,5,5
+RF-08,"O sistema deve permitir que o usuário marque e desmarque clínicas, artigos educativos e resultados de exames como ""favoritos"" para acesso rápido em uma área dedicada.",4.5,4.5,5,4
+RF-09,"O sistema deve fornecer um formulário interno para que os usuários reportem erros técnicos (""bugs"") ou enviem sugestões de melhoria diretamente à equipe de desenvolvimento.",5,4.5,5,3.5
+RF-10,"O sistema deve disponibilizar uma área de comunidade onde usuários podem interagir, compartilhar experiências e dúvidas sobre saúde cardiovascular, com recursos de moderação para garantir a veracidade das informações.",5,5,5,5

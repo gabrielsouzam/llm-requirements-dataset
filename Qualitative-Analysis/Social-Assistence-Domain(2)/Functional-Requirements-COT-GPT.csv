@@ -1,0 +1,50 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"Pesquisa e Filtros de Ações
+O sistema deve permitir que visitantes e usuários cadastrados realizem pesquisa e apliquem filtros na listagem de ações de caridade. A página de listagem deve oferecer:
+• Campo de busca por palavra-chave (título, descrição ou local).
+• Filtros por: faixa de data (início/fim), local, categoria/objetivo da ação, status (pendente/realizada/agendada).
+• Ordenação por: mais recentes, data próxima, mais visualizadas.
+• Resultados devem ser paginados e exibir contagem total.
+
+Validações: pesquisa deve tolerar variações (busca parcial) e retornar mensagem ""Nenhuma ação encontrada"" quando aplicável.",5,5,5,5
+RF-02,O sistema deve oferecer controles de paginação (tamanho de página configurável: 10/20/50) e ordenação na listagem pública de ações. Visitantes podem escolher a ordenação e navegar entre páginas. O sistema deve guardar preferências de paginação para usuários autenticados.,4,5,5,5
+RF-03,"A página de detalhe de cada ação deve exibir:
+• Conteúdo completo (descrição detalhada, objetivo, público-alvo).
+• Galeria de mídia (imagens e vídeos) com possibilidade de download limitado para administradores.
+• Local com mapa embutido (se endereço informado).
+• Botões de ação: ""Doar"", ""Quero ser voluntário"" (se aplicável) e ""Compartilhar"".
+• Se permitido pela política, seção opcional de comentários ou perguntas (moderada por administradores).
+
+Validações: comentários submetidos por usuários autenticados; visitantes devem ser redirecionados para cadastro/login antes de comentar.",5,5,5,5
+RF-04,"O sistema deve prover um formulário de login para Usuários e Administradores solicitando e-mail e senha. Regras:
+• Login com verificação de e-mail confirmado.
+• Suporte a manter sessão (checkbox ""Manter-me conectado"") com duração configurável.
+• Logout deve encerrar a sessão e invalidar tokens.
+
+Segurança: limitar tentativas de login e registrar tentativas suspeitas.",5,5,5,5
+RF-05,"O sistema deve disponibilizar funcionalidade de recuperação de senha que:
+• Solicita e-mail cadastrado;
+• Envia link temporário de redefinição com token expirável;
+• Permite definir nova senha com validação de força (mínimo de caracteres, combinação).
+
+Registros: registrar uso do token e expiracão.",5,5,5,5
+RF-06,"O sistema deve permitir que Usuários autenticados alterem seus dados: nome completo, e-mail (com re-verificação), telefone/celular, endereço (opcional), preferências de comunicação (newsletters, e-mail transacional). Ao alterar e-mail, enviar novo e-mail de confirmação.",5,5,5,5
+RF-07,"O sistema deve permitir que Usuários (após login) se inscrevam como voluntários para ações que aceitam voluntariado. O formulário de inscrição deve solicitar disponibilidade, breve observação e contato. Administradores devem poder: aprovar/recusar inscrições, ver lista de voluntários por ação e exportar lista.",5,4,5,5
+RF-08,"O sistema deve prover para Usuários autenticados uma área ""Meus Registros"" listando:
+• Histórico de doações (data, valor, forma, status, recibo/identificador);
+• Histórico de participações/inscrições em ações (status — inscrito/confirmado/presente).
+
+Usuário pode baixar recibos PDF/CSV das doações quando o doador forneceu dados.",5,4,5,5
+RF-09,"O site deve oferecer um formulário de contato público (nome, e-mail, assunto, mensagem) e uma página de FAQ. O formulário deve:
+• Enviar notificação por e-mail para administradores;
+• Criar um ticket simples no painel administrativo com status (novo, em andamento, resolvido).
+
+Validações: CAPTCHA ou mecanismo anti-spam para visitantes.",4,5,4,5
+RF-10,"No painel administrativo, o administrador deve poder:
+• Editar ação já salva;
+• Excluir ação (com confirmação e registro de auditoria);
+• Salvar como rascunho e publicar posteriormente;
+• Agendar publicação automática em data/hora futura;
+• Definir visibilidade (pública, privada ou somente para usuários logados).
+
+Mudanças devem registrar histórico (quem, quando, resumo da alteração).",5,5,5,5

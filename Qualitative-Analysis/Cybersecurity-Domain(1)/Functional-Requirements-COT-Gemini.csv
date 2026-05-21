@@ -1,0 +1,33 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"Na inicialização, a Aplicação deve:
+1. Localizar e analisar um arquivo de configuração (ex: fakenet.ini).
+2. Se o arquivo não for encontrado, deve falhar graciosamente com uma mensagem de erro.
+3. Se o arquivo contiver erros de sintaxe, deve reportar o erro e terminar.
+4. As configurações lidas devem ser usadas para determinar o comportamento do Diverter e quais Listeners serão iniciados.",5,4,5,5
+RF-02,"A Aplicação deve iterar sobre a lista de Listeners definidos no arquivo de configuração. Para cada Listener:
+1. Se o Listener estiver marcado como ""habilitado"" (ex: enabled = True), a Aplicação deve iniciá-lo.
+2. O Listener deve ser vinculado (bind) à porta, protocolo (TCP/UDP) e endereço IP especificados em sua configuração.
+3. Se a vinculação da porta falhar (ex: porta já em uso), a Aplicação deve registrar um erro para aquele Listener, mas continuar a iniciar os demais.",5,4.5,5,5
+RF-03,"Este é o mecanismo central de interceptação:
+1. Se o Diverter estiver habilitado (DivertTraffic = True), ele deve interceptar todo o tráfego de saída na porta 53 (DNS).
+2. Todo o tráfego DNS interceptado deve ser redirecionado para o Listener DNS local, independentemente do servidor DNS configurado no sistema operacional.
+3. O Listener DNS deve responder a qualquer consulta (ex: A, AAAA, MX) com o endereço IP local especificado na configuração (DivertTargetIP).",4,4.5,5,5
+RF-04,"Para reduzir o ruído, o Diverter deve implementar filtragem baseada em nomes de processos:
+1. Deve haver uma configuração de ""lista de bloqueio"" (ProcessBlacklist). Se um processo nesta lista gerar tráfego, ele sempre será interceptado.
+2. Deve haver uma configuração de ""lista de permissão"" (ProcessWhitelist). Se um processo nesta lista gerar tráfego, ele nunca será interceptado e será permitido sair para a Internet (se a rede permitir).
+3. Se um processo não estiver em nenhuma das listas, seu tratamento será definido por um modo padrão (ex: DivertAllTraffic).",5,5,5,5
+RF-05,"Os Listeners de nível de aplicação (ex: HTTP, FTP) devem permitir que o analista sirva respostas pré-definidas:
+1. A configuração de cada Listener deve permitir especificar um diretório ou arquivo de resposta.
+2. Exemplo (HTTP): Se o Listener HTTP receber uma requisição GET, ele deve tentar encontrar um arquivo correspondente no diretório de resposta. Se não encontrar, deve retornar um arquivo padrão (ex: default.html) ou uma resposta 404.
+3. Exemplo (FTP): O Listener FTP deve permitir o login com qualquer credencial e listar os arquivos do diretório de resposta.",4,4,5,5
+RF-06,"O sistema deve ser capaz de descriptografar o tráfego SSL/TLS:
+1. Deve haver uma configuração global para habilitar a interceptação SSL.
+2. Quando habilitado, o sistema (provavelmente o Listener HTTP/Proxy) deve gerar dinamicamente certificados SSL para os domínios solicitados pelo malware.
+3. Esses certificados dinâmicos devem ser assinados por uma Autoridade Certificadora (CA) raiz fornecida pelo FakeNet-NG (ex: fakenet-ca.pem).
+4. O analista é responsável por instalar esta CA raiz no repositório de confiança da máquina de análise antes de executar o malware.",3.5,4,5,4
+RF-07,"O Proxy Listener deve rotear o tráfego órfão:
+1. Se habilitado, o Proxy Listener deve escutar em portas que não foram explicitamente vinculadas a outros Listeners.
+2. Ao receber uma nova conexão, o Proxy deve armazenar em buffer os primeiros bytes de dados.
+3. O Proxy deve invocar a função taste() de todos os Listeners ativos, passando os dados em buffer.
+4. Se um Listener retornar True (indicando que ""entendeu"" o protocolo), o Proxy Listener deve transferir a conexão e os dados em buffer para esse Listener e parar de monitorar a conexão.
+5. Se nenhum Listener reivindicar a conexão, o Proxy deve fechá-la ou tratá-la com um listener padrão genérico.",4.5,4.5,5,5

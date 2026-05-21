@@ -1,0 +1,57 @@
+﻿ID,Descrição,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que o visitante pesquise ações de caridade por título, data, tipo de ação, local ou palavras-chave.
+O visitante deve poder combinar filtros e ver a lista sendo atualizada dinamicamente.
+O sistema deve exibir mensagens claras quando nenhuma ação for encontrada.
+
+",5,5,5,5
+RF-02,"Ao clicar em uma ação, o visitante deve visualizar uma página dedicada com:
+• Título
+• Descrição completa
+• Data e hora
+• Local
+• Galeria de fotos e vídeos
+• Objetivo da ação
+• Histórico da ação (se aplicável)
+
+A página deve ser responsiva e permitir compartilhamento em redes sociais.",5,5,5,5
+RF-03,"O sistema deve permitir que o administrador edite ações já cadastradas.
+O administrador deve poder alterar título, descrição, data, local, objetivo e mídias.
+Alterações devem ser salvas imediatamente e refletidas no site.",5,5,5,5
+RF-04,"O sistema deve permitir que o administrador exclua ações cadastradas.
+Antes da exclusão, o sistema deve exibir uma confirmação.
+A ação excluída deve deixar de ser exibida ao público.",5,5,5,5
+RF-05,"O sistema deve permitir que o visitante compartilhe ações no WhatsApp, Facebook, Instagram e e-mail.
+A página da ação deve conter botões de compartilhamento.",5,4.5,5,4.5
+RF-06,"O sistema deve permitir que o administrador gere relatórios em PDF ou Excel contendo:
+• Total arrecadado por período
+• Número de doações
+• Média de valor doado
+• Doações por forma de pagamento
+• Relatório detalhado por doador
+
+O administrador deve poder definir o período (semana, mês, ano, intervalo customizado).",5,5,5,5
+RF-07,"O sistema deve permitir que o administrador visualize todos os usuários cadastrados, contendo:
+• Nome
+• E-mail
+• Status do e-mail (confirmado / não confirmado)
+
+O administrador deve poder excluir usuários ou alterar seus dados.",4.5,4,4,4
+RF-08,"O sistema deve permitir que o administrador envie comunicados por e-mail para todos os usuários cadastrados.
+
+O administrador deve escolher:
+• Assunto
+• Conteúdo
+• Lista de destinatários (todos ou segmentados)
+O sistema deve registrar:
+• data de envio
+• responsável pelo envio
+• quantidade de emails entregues",5,5,5,4
+RF-09,"O sistema deve disponibilizar uma funcionalidade de ""Esqueci minha senha"".
+O usuário deve informar seu e-mail e receber um link seguro para redefinição de senha.
+O link deve expirar após um período definido.",5,5,5,5
+RF-10,"O sistema deve prover uma tela de login que solicita:
+• e-mail
+• senha
+O sistema deve validar credenciais, criar sessão autenticada e redirecionar o usuário/administrador para seu respectivo painel.
+
+Em caso de falha, exibir mensagem clara.",5,5,5,5

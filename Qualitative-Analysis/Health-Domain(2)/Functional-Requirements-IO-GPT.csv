@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que o usuário visualize o histórico de suas avaliações, triagens e recomendações previamente geradas no aplicativo.",5,4,5,5
+RF-02,O sistema deve gerar e exibir recomendações personalizadas de bem-estar e cuidados cardiovasculares com base nos dados coletados na triagem inteligente e no comportamento do usuário.,4,4,4,5
+RF-03,"O sistema deve disponibilizar uma biblioteca educativa com artigos, vídeos e infográficos sobre saúde cardiovascular, organizada por temas e níveis (iniciante, intermediário, avançado).",5,5,5,5
+RF-04,"O sistema deve permitir que o usuário cadastre e edite informações pessoais e de saúde, como idade, peso, altura e hábitos de vida.",5,4,5,5
+RF-05,"O sistema deve permitir que o usuário registre manualmente sinais vitais (frequência cardíaca, pressão arterial, peso) para acompanhamento contínuo.",5,4,4,5
+RF-06,O sistema deve integrar-se com dispositivos vestíveis (ex.: smartwatches) para coletar sinais vitais automaticamente quando disponível.,5,5,4,5
+RF-07,O sistema deve identificar padrões de risco com base nos sinais vitais e emitir alertas ao usuário quando algum valor estiver fora da faixa saudável.,5,5,5,5
+RF-08,"O sistema deve gerar relatórios consolidados com evolução de sinais vitais, resultados de quizzes, diagnósticos preliminares e recomendações.",5,5,5,5
+RF-09,"O sistema deve permitir que o usuário marque conteúdos educativos, quizzes ou visualizações 2D como favoritos para acesso rápido posterior.",5,4,5,4
+RF-10,"O sistema deve oferecer um espaço de comunidade onde pacientes e estudantes podem compartilhar experiências, tirar dúvidas e interagir em tópicos moderados.",5,4,4,5

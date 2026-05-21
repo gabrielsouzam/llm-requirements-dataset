@@ -1,0 +1,19 @@
+﻿ID,Descrição,Ator,Ação,Objeto,Condição,Clareza,Completude,Consitência,Relevância
+RF-01,"O Diverter deve respeitar uma configuração booleana RedirectAllTraffic.
+1. Se True, o Diverter deve interceptar todo o tráfego TCP e UDP que não corresponda às regras de exclusão (BlackLists) e redirecioná-lo para o Proxy Listener.
+2. Se False, o Diverter deve interceptar apenas o tráfego destinado especificamente aos Listeners configurados (ex: tráfego DNS para a porta 53, se o Listener DNS estiver ativo).",Yes,Yes,Yes,Yes,4.5,4.5,4.5,5
+RF-02,"O sistema deve usar uma configuração booleana ModifyLocalDNS. Quando habilitada, a Aplicação (ao iniciar) deve modificar a configuração do resolver DNS do sistema operacional local para apontar para 127.0.0.1. Esta ação deve ser revertida durante o processo de Término Graceful.",Yes,Yes,Yes,Yes,5,5,5,4.5
+RF-03,"O Diverter deve operar em dois modos distintos, definidos pela configuração NetworkMode:
+• SingleHost: O Diverter intercepta apenas o tráfego originado ou destinado à máquina local.
+• MultiHost: O Diverter atua como um gateway, interceptando o tráfego de outras máquinas na rede (ex: VMs de análise) que estejam configuradas para usá-lo como gateway.",Yes,Yes,Yes,Yes,4.5,5,5,5
+RF-04,"O Diverter deve inspecionar o processo de origem de todos os fluxos de rede no modo SingleHost. Se o nome executável do processo (ex: chrome.exe) estiver presente na configuração ProcessBlackList, o Diverter deve ignorar todo o tráfego desse processo, permitindo que ele se conecte diretamente à Internet.",Yes,Yes,Yes,Yes,4.5,4,4.5,5
+RF-05,"O Diverter deve inspecionar o destino (IP ou nome de domínio) de todos os fluxos de tráfego. Se o destino corresponder a uma entrada na HostBlackList (lista de exclusão) ou não corresponder a uma entrada na HostWhiteList (lista de inclusão, se definida), o Diverter deve ignorar o fluxo.",Yes,Yes,Yes,Yes,4.5,5,5,5
+RF-06,"O Diverter deve respeitar as configurações BlackListPortsTCP e BlackListPortsUDP. Se um fluxo de tráfego for destinado a uma porta listada em qualquer uma dessas listas de exclusão, o Diverter deve ignorar o fluxo.",Yes,Yes,Yes,Yes,5,4,3.5,4
+RF-07,"O Listener DNS deve responder a todas as consultas de DNS (Tipo A e AAAA) para as quais não possui uma entrada de host específica. A resposta deve ser o endereço IP da máquina local onde o FakeNet-NG está sendo executado, garantindo que o malware tente se conectar localmente.",Yes,Yes,Yes,Yes,4.5,4.5,5,4.5
+RF-08,"Os Listeners HTTP e HTTPS devem suportar a configuração de um arquivo padrão. Ao receber uma requisição (ex: GET), se nenhuma regra de resposta mais específica for definida, o Listener deve responder com o conteúdo do arquivo estático configurado (ex: index.html ou payload.bin).",Yes,Yes,Yes,Yes,4.5,4.5,5,5
+RF-09,"Todos os Listeners (incluindo TCP, UDP e HTTP) devem suportar um modo de resposta PyScript. Quando configurado, o Listener deve:
+1. Receber os dados de entrada do malware.
+2. Executar um script Python externo definido pelo usuário, passando os dados da requisição como entrada.
+3. Capturar a saída padrão (stdout) do script.
+4. Enviar o conteúdo da saída padrão de volta ao malware como a resposta da simulação.",Yes,Yes,Yes,Yes,4.5,5,4,4.5
+RF-10,"O Proxy Listener, após receber um fluxo do Diverter, tentará identificar o protocolo usando o callback taste() dos Listeners registrados. Se nenhum Listener conseguir identificar (provar) o tráfego, o Proxy Listener deve encaminhar o fluxo para um Listener padrão (ex: DefaultTCPListener ou DefaultUDPListener), se configurado, para garantir que a conexão não seja simplesmente descartada.",Yes,Yes,Yes,Yes,5,4.5,4.5,4.5

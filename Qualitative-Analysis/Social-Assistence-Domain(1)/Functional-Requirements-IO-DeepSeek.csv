@@ -1,0 +1,55 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que visitantes e usuários pesquisem ações de caridade através de uma barra de pesquisa. A pesquisa deve considerar:
+• Palavras-chave no título e descrição
+• Filtros por data (mais recentes, mais antigas)
+• Filtros por categoria (alimentação, educação, saúde, etc.)
+• Filtros por localização
+Os resultados devem ser exibidos em ordem de relevância.",5,5,5,5
+RF-02,"O sistema deve permitir filtrar as ações de caridade por categorias pré-definidas:
+• Distribuição de alimentos
+• Atendimento médico
+• Ações educativas
+• Eventos comunitários
+• Campanhas sazonais (Natal, Páscoa, etc.)
+Cada ação pode pertencer a uma ou mais categorias.",5,5,3.5,4.5
+RF-03,"O sistema deve permitir que administradores editem ações existentes através do painel administrativo. Deve ser possível:
+• Modificar título, descrição, data, local e objetivo
+• Adicionar ou remover fotos/vídeos
+• Alterar status da ação (ativa, concluída, cancelada)
+• Excluir ações (com confirmação)",4.5,5,5,5
+RF-04,"O sistema deve prover um gerenciador de mídia no painel administrativo para:
+• Fazer upload de fotos e vídeos
+• Organizar mídias em álbuns
+• Excluir mídias antigas
+• Associar mídias a ações específicas",4,4.5,5,5
+RF-05,"O sistema deve gerar relatórios periódicos das ações realizadas, incluindo:
+• Número de ações por período
+• Público atendido
+• Recursos utilizados
+• Impacto social mensurado
+Os relatórios devem ser exportáveis em PDF e Excel.",4.5,5,5,4.5
+RF-06,"O sistema deve enviar notificações automáticas por e-mail para:
+• Novas ações cadastradas
+• Campanhas especiais
+• Agradecimentos por doações
+• Atualizações importantes da instituição",4.5,5,5,4.5
+RF-07,"O sistema deve permitir que usuários cadastrados:
+• Editem suas informações pessoais
+• Alterem sua senha
+• Gerenciem preferências de notificação
+• Visualizem histórico de interações",5,5,4,5
+RF-08,"O sistema deve implementar autenticação segura para administradores:
+• Login com e-mail e senha
+• Recuperação de senha
+• Logout automático por inatividade
+• Registro de logs de acesso",4,5,3.5,5
+RF-09,"O sistema deve incluir uma seção de blog/notícias para:
+• Publicar atualizações institucionais
+• Compartilhar histórias de impacto
+• Divulgar parcerias e colaborações
+• Comentar sobre questões sociais relevantes",4,4.5,4,4
+RF-10,"O sistema deve permitir o cadastro de voluntários:
+• Formulário de interesse em voluntariado
+• Seleção de áreas de atuação
+• Agendamento de disponibilidade
+• Comunicação com coordenadores",4.5,5,4.5,4.57

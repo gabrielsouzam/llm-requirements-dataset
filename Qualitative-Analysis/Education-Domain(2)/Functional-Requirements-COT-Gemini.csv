@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,O sistema deve permitir que um novo usuário se cadastre na plataforma com o perfil de Professor.,5,5,5,5
+RF-02,O sistema deve permitir que usuários (Professores e Alunos) acessem a plataforma fornecendo suas credenciais válidas.,5,5,5,5
+RF-03,O sistema deve permitir que um novo usuário se cadastre na plataforma com o perfil de Aluno.,5,5,5,5
+RF-04,O sistema deve permitir que um usuário autenticado encerre sua sessão de forma segura.,5,5,5,5
+RF-05,O sistema deve fornecer um mecanismo para que usuários (Professores e Alunos) redefinam suas senhas caso as esqueçam.,5,5,5,5
+RF-06,O sistema deve permitir ao Professor visualizar uma lista de todos os grupos que ele gerencia.,5,5,5,5
+RF-07,O sistema deve permitir que o Professor remova um Aluno específico de um grupo.,5,5,5,5
+RF-08,"O sistema deve permitir que o Professor arquive um grupo que não está mais ativo, ocultando-o da visualização padrão, mas mantendo o histórico de resultados.",5,5,5,5
+RF-09,O sistema deve permitir que o Professor edite informações de um grupo existente (ex: nome da turma).,5,5,5,5
+RF-10,O sistema deve permitir que o Aluno acesse e inicie os módulos de quiz (Aventuras do Dinheirinho) que lhe foram atribuídos,5,5,5,5

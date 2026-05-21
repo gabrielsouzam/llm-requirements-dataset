@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que os alunos adquiram créditos (via integração bancária ou boleto) e consultem seu saldo atual, debitando o valor automaticamente no momento da reserva ou da validação do acesso.",5,5,5,5
+RF-02,"O sistema deve enviar notificações automáticas (via e-mail ou push) aos alunos sobre: confirmação de reserva, cardápio do dia liberado, baixo saldo de créditos e lembretes para evitar o não comparecimento (""no-show"").",5,5,5,5
+RF-03,"O sistema deve permitir que o aluno visualize um histórico detalhado de suas refeições passadas, incluindo datas, horários e valores debitados, para controle pessoal de gastos e dieta.",5,5,5,5
+RF-04,"O sistema deve permitir que a administração ou nutricionistas cadastrem, editem e excluam os cardápios semanais ou mensais, associando os pratos a dias e turnos (almoço/jantar) específicos.",5,5,5,5
+RF-05,"O sistema deve permitir que a administração detalhe a composição dos pratos cadastrados, informando calorias, macro e micronutrientes, e marcando obrigatoriamente a presença de alérgenos (glúten, lactose, amendoim, etc.).",5,5,5,5
+RF-06,"O sistema deve possuir uma interface (integrada a catracas ou leitura de QR Code) para validar a entrada do aluno no restaurante, verificando se há uma reserva válida para o horário e registrando o consumo efetivo (""baixa"" na reserva).",4.5,5,5,5
+RF-07,"O sistema deve permitir que administradores gerenciem os usuários do sistema, podendo bloquear acessos indevidos, alterar níveis de permissão (ex: Aluno, Nutricionista, Caixa) e atualizar dados cadastrais quando necessário.",4.5,5,5,4.5
+RF-08,"O sistema deve permitir que os alunos enviem uma avaliação (nota ou comentário) após o consumo da refeição, gerando dados qualitativos para a administração melhorar o serviço.",5,4,4,5
+RF-09,"O sistema deve permitir a configuração de janelas de tempo, como: horário limite para realizar reserva do dia, horário limite para cancelamento sem multa e horários de funcionamento do refeitório.",5,5,5,5
+RF-10,"O sistema deve apresentar um painel para a administração que mostre, em tempo real, quantas pessoas já entraram, quantas reservas ainda faltam ser atendidas e o fluxo de entrada por minuto, auxiliando a cozinha na reposição de alimentos.",5,5,5,5

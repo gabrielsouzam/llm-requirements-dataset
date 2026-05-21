@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que o aluno altere sua senha de acesso, seguindo critérios de segurança (mínimo de caracteres, confirmação).",5,5,5,5
+RF-02,"O sistema deve oferecer um fluxo de recuperação de conta, permitindo redefinir a senha por meio de um link enviado ao e-mail cadastrado.",5,4,5,5
+RF-03,"O sistema deve permitir que o aluno edite suas informações pessoais (ex: e-mail, telefone, curso) e restrições alimentares.",5,4,5,5
+RF-04,"O sistema deve permitir que o usuário (aluno ou administrador) efetue logout de forma segura, encerrando a sessão atual.",5,5,5,5
+RF-05,"O sistema deve permitir que o aluno consulte seu histórico de reservas realizadas, incluindo datas, horários e status (confirmada, utilizada, cancelada).",5,4,5,5
+RF-06,"O sistema deve permitir que o funcionário do restaurante valide o acesso do aluno no momento da refeição, por meio de leitura de QR Code, matrícula ou crachá, registrando a efetivação da refeição.",5,5,5,5
+RF-07,O sistema deve monitorar e exibir para a administração a lotação atual do restaurante (capacidade vs. reservas confirmadas vs. check-ins realizados) para evitar superlotação.,4,3,5,4
+RF-08,"O sistema deve permitir que a administração defina regras de reserva (ex.: máximo de reservas por semana por aluno, prazo máximo para cancelamento).",5,5,5,5
+RF-09,"O sistema deve permitir que a administração cadastre e atualize os cardápios (almoço e jantar) para cada data, incluindo prato principal, acompanhamentos, guarnição, sobremesa e bebida.",5,5,5,5
+RF-10,"O sistema deve permitir que a administração associe informações nutricionais detalhadas (calorias, proteínas, carboidratos, alergênicos) a cada item do cardápio.",5,4,5,5

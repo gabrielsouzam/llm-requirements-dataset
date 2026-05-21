@@ -1,0 +1,11 @@
+﻿ID,Descrição,Ator,Ação,Objeto,Condição,Clareza,Completude,Consitência,Relevância
+RF-01,O sistema deve permitir que professores realizem seu cadastro inicial na plataforma fornecendo dados básicos.,Yes,Yes,Yes,Yes,5,5,5,5
+RF-02,O sistema deve permitir que Usuários (Professores e Alunos) autentiquem-se no sistema utilizando credenciais.,Yes,Yes,Yes,Yes,5,5,5,5
+RF-03,O sistema deve permitir que o usuário solicite a redefinição de sua senha via e-mail,Yes,Yes,Yes,Yes,5,5,5,5
+RF-04,O sistema deve permitir que o professor visualize e edite suas informações de perfil.,Yes,Yes,Yes,No,5,4,5,5
+RF-05,O sistema deve permitir que o aluno personalize seu avatar e nickname.,Yes,Yes,Yes,No,5,5,5,4
+RF-06,O sistema deve permitir que o usuário encerre sua sessão de forma segura.,Yes,Yes,Yes,Yes,5,5,5,5
+RF-07,"O sistema deve permitir que o professor visualize a lista de seus grupos, edite informações básicas e inative grupos existentes.",Yes,Yes,Yes,No,5,5,5,5
+RF-08,O sistema deve permitir que o professor gere um código de acesso único e temporário para um grupo específico.,Yes,Yes,Yes,Yes,5,5,5,5
+RF-09,"O sistema deve permitir que o aluno visualize e selecione missões/quizzes disponíveis no módulo ""Aventuras do Dinheirinho"".",Yes,Yes,Yes,Yes,5,5,5,5
+RF-10,"O sistema deve apresentar as perguntas do quiz de forma sequencial e interativa, permitindo que o aluno selecione e envie suas respostas.",Yes,Yes,Yes,Yes,5,5,5,5

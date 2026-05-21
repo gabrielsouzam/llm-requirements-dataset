@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que o usuário crie, edite e visualize seu perfil, incluindo informações pessoais, histórico de saúde e preferências de notificação.",4,3.5,4.5,5
+RF-02,"O sistema deve fornecer mecanismos de login e logout seguros, com opção de recuperação de senha quando necessário.",4.5,3,4,5
+RF-03,"O sistema deve permitir que o usuário registre manualmente métricas de saúde como pressão arterial, frequência cardíaca e peso, com data e hora.",5,4,5,4
+RF-04,"O sistema deve gerar relatórios periódicos com o histórico de métricas de saúde e avaliações, apresentando gráficos de evolução e tendências.",4.5,4,5,5
+RF-05,"O sistema deve armazenar e exibir o histórico completo de triagens realizadas, permitindo comparação entre avaliações em diferentes datas.",4.5,4.5,5,4.5
+RF-06,"O sistema deve enviar notificações push com lembretes de medicamentos, alertas sobre fatores de risco e sugestões de hábitos saudáveis.",5,4,5,5
+RF-07,"O sistema deve disponibilizar uma biblioteca organizada com artigos, vídeos e materiais educativos sobre saúde cardiovascular, com filtros por categoria e complexidade.",5,4.5,5,4.5
+RF-08,"O sistema deve oferecer explicações detalhadas de procedimentos cirúrgicos cardíacos, com ilustrações passo a passo e informações sobre recuperação.",4,4,4,4.5
+RF-09,"O sistema deve fornecer a funcionalidade de conversão texto-áudio para todo o conteúdo educativo, permitindo aprendizado por áudio.",4,3.5,4,4
+RF-10,"O sistema deve disponibilizar um fórum onde usuários possam criar tópicos, responder discussões e compartilhar experiências sobre saúde cardiovascular.",4,3,4,4.5

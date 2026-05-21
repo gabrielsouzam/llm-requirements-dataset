@@ -1,0 +1,37 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"A Aplicação deve ler as configurações de um arquivo (por exemplo, fakenet.yml ou fakenet.ini) no momento da inicialização.
+1. Caso o arquivo não exista, a Aplicação deve encerrar com uma mensagem de erro clara.
+2. As configurações devem incluir: portas, protocolos, listeners habilitados, caminhos de log, e parâmetros do Diverter.
+3. Parâmetros inválidos ou desconhecidos devem gerar um aviso, mas não impedir a inicialização, salvo se críticos (por exemplo, falta de porta ou IP).",5,5,5,5
+RF-02,"A Aplicação deve iniciar todos os Listeners configurados como habilitados.
+1. Cada Listener deve ser instanciado em sua porta e protocolo específicos.
+2. Se uma porta estiver em uso, a Aplicação deve registrar o erro e continuar com os demais Listeners.
+3. Deve ser possível habilitar ou desabilitar Listeners individualmente via configuração.",5,4.5,5,4.5
+RF-03,"A Aplicação deve manter logs de todas as atividades do sistema.
+1. Os logs devem incluir eventos como inicialização, término, redirecionamento de tráfego, e erros.
+2. O nível de detalhe (DEBUG, INFO, WARNING, ERROR) deve ser configurável.
+3. Os logs devem poder ser direcionados tanto para console quanto para arquivo.",5,4.5,4.5,4.5
+RF-04,"A Aplicação deve suportar um modo “Dry Run” para validar configurações sem aplicar alterações na rede.
+1. Quando ativado, nenhum Listener ou Diverter deve ser iniciado.
+2. O sistema deve apenas validar e exibir a configuração atual.",5,4,4.5,5
+RF-05,"O Diverter deve interceptar o tráfego de rede local e redirecioná-lo para o Listener apropriado.
+1. O redirecionamento deve ser transparente para o malware em execução.
+2. Deve ser possível configurar endereços ou portas a serem ignorados (whitelist).
+3. O Diverter deve restaurar automaticamente as regras originais da rede quando desligado.",5,5,5,4.5
+RF-06,"O Diverter deve identificar e tratar protocolos de transporte (TCP, UDP, ICMP).
+1. Deve redirecionar conexões TCP e UDP conforme definido na configuração.
+2. Pacotes ICMP (como ping) podem ser ignorados ou registrados, conforme opção.",4,4.5,4,4.5
+RF-07,"O Diverter deve permitir filtros de endereços IP e portas.
+1. Deve ser possível especificar intervalos de IP e portas que não devem ser interceptados.
+2. O sistema deve registrar tentativas de tráfego para destinos bloqueados.",4.5,4.5,5,5
+RF-08,"Cada Listener deve registrar as requisições recebidas.
+1. Os logs devem conter IP de origem, porta, protocolo, timestamp e conteúdo (quando aplicável).
+2. Deve haver opção para anonimizar endereços IP no log.",4,3.5,3,5
+RF-09,"Cada Listener deve responder ao cliente de forma válida dentro de seu protocolo.
+1. O DNS Listener deve responder com endereços IP falsos configuráveis.
+2. O HTTP Listener deve responder com uma página HTML genérica ou simulada.
+3. O SMTP Listener deve aceitar e registrar mensagens de e-mail falsas.",4,4.5,4.5,5
+RF-10,"O Proxy Listener deve identificar o tipo de tráfego recebido e encaminhar para o Listener apropriado.
+1. O Proxy Listener deve usar o callback taste() de cada Listener para decidir o destino.
+2. Se nenhum Listener corresponder, o tráfego deve ser descartado ou logado como “não identificado”.
+3. O Proxy deve suportar múltiplos protocolos simultaneamente.",4,4.5,4,5

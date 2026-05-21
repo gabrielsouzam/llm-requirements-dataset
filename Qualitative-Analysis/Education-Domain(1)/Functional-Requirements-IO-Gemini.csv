@@ -1,0 +1,13 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir o cadastro de novos usuários, diferenciando o perfil no momento do registro (Aluno ou Professor).",4,4,4,5
+RF-02,O sistema deve permitir que usuários cadastrados (Alunos e Professores) acessem suas contas por meio de um formulário de login seguro.,5,4,4,5
+RF-03,"O sistema deve permitir ao Professor visualizar os alunos inscritos em seus grupos, editar informações do grupo (ex: nome) e remover alunos.",4,4,4,5
+RF-04,"O sistema deve permitir ao Aluno iniciar e participar dos módulos de quiz (""Aventuras do Dinheirinho"") que foram atribuídos ao seu grupo pelo Professor.",5,4,4,5
+RF-05,O sistema deve permitir que o Aluno selecione e submeta uma resposta para cada questão apresentada durante o quiz.,5,5,5,5
+RF-06,"O sistema deve exibir ao Aluno seu histórico de pontuação, quizzes concluídos, moedas virtuais (se houver) e seu desempenho geral na plataforma.",5,5,5,5
+RF-07,"O sistema deve exibir ao Professor um painel (dashboard) com o progresso agregado do grupo (percentual de conclusão, média de acertos) e o desempenho individual de cada aluno.",5,5,5,5
+RF-08,"O sistema deve exibir um ranking (leaderboard) para o grupo, classificando os alunos com base na pontuação obtida nos quizzes para incentivar a competição saudável.
+
+",4.5,5,5,5
+RF-09,"O sistema deve permitir ao Professor selecionar e atribuir módulos de quiz específicos (""Aventuras"") para seus grupos de alunos.",4,4,4,4.5
+RF-10,O sistema deve fornecer um mecanismo para que usuários (Alunos e Professores) possam redefinir suas senhas caso as esqueçam.,4,3.5,4,4

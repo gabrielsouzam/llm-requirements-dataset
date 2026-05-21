@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que os alunos editem suas informações de contato e preferências pessoais no perfil, garantindo que a comunicação e os dados demográficos estejam sempre atualizados.",5,5,5,5
+RF-02,"O sistema deve apresentar, detalhadamente, a composição nutricional de cada prato do cardápio (calorias, macronutrientes e ingredientes), promovendo a transparência e auxiliando em dietas específicas.",5,4,5,5
+RF-03,"O sistema deve permitir o registro da presença do aluno no momento da refeição (via QR Code, biometria ou cartão), validando a reserva existente e contabilizando a refeição efetivada para controle de estoque.",4,5,5,5
+RF-04,"O sistema deve permitir que os alunos enviem feedback sobre a refeição consumida, atribuindo notas e comentários sobre a qualidade da comida e do serviço, gerando métricas de satisfação para a administração.",5,5,5,5
+RF-05,"O sistema deve disponibilizar ao aluno um histórico cronológico de todas as refeições realizadas e canceladas, permitindo o controle pessoal de frequência e gastos (se aplicável).",5,4,5,5
+RF-06,"O sistema deve exibir, em tempo real ou por estimativa, o status da lotação do restaurante (ex: ""Fila curta"", ""Moderada"", ""Intensa""), auxiliando o aluno na decisão do melhor horário para a refeição.",5,4,5,5
+RF-07,"O sistema deve enviar alertas automáticos (via push ou e-mail) aos alunos sobre confirmação de reservas, lembretes de horários, alterações repentinas no cardápio ou abertura de novas vagas.",5,4,5,5
+RF-08,"O sistema deve disponibilizar uma seção informativa que apresente a equipe responsável pelo preparo do dia e a origem dos principais insumos (fornecedores locais), fortalecendo a confiança e a transparência institucional.",5,4,5,4
+RF-09,"O sistema deve exibir uma lista dos pratos mais bem avaliados ou mais solicitados pela comunidade acadêmica (""Pratos Favoritos""), incentivando a interação e o engajamento dos alunos com o cardápio.",5,4,5,5
+RF-10,"O sistema deve permitir que os alunos compartilhem o cardápio do dia ou suas avaliações em redes sociais externas ou aplicativos de mensagem, ampliando a divulgação do serviço.",5,5,5,5

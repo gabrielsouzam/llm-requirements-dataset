@@ -1,0 +1,12 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir a visualização, para cada item do cardápio, da lista completa de ingredientes e a identificação explícita de alergênicos (p.ex. glúten, lactose, ovo, castanhas), de forma que o aluno possa consultar antes de indicar ou reservar a refeição.",5,5,5,5
+RF-02,"O sistema deve disponibilizar, para cada prato/porção do cardápio, um resumo nutricional contendo ao menos: calorias (kcal), quantidade aproximada de proteínas, carboidratos e gorduras, e tamanho da porção.",5,5,5,5
+RF-03,"O sistema deve permitir o cadastro de fornecedores e, para compras/insumos registrados, vincular lote e data de entrada ao ingrediente utilizado no cardápio, possibilitando consulta de rastreabilidade por administrador.",5,5,5,4.5
+RF-04,"O sistema deve permitir que a administração marque itens do cardápio como “indisponível” por período (inicio/fim) ou automaticamente por integração com estoque, atualizando imediatamente a visualização para os alunos.",4.5,5,5,4.5
+RF-05,"O sistema deve, no momento da indicação ou reserva, verificar o perfil de restrições do aluno e alertar automaticamente se o prato selecionado contém um alergênico ou ingrediente contraindicado, impedindo a confirmação sem reconhecimento explícito do usuário.
+",5,5,5,5
+RF-06,"O sistema deve permitir que o aluno submeta feedback após consumir a refeição, incluindo nota (ex.: 1–5), comentário textual e marcação de incidentes (ex.: qualidade, temperatura, presença de alergênico), vinculados à data e ao prato.",5,5,5,5
+RF-07,"O sistema deve agregar avaliações e comentários e exibir, para cada prato, métricas como média de nota, número de avaliações no período e principais comentários (com opção de filtro por período).",5,5,5,4.5
+RF-08,"O sistema deve permitir que o aluno compartilhe o cardápio do dia ou um feedback via link público ou atalhos de redes sociais, respeitando por padrão configurações de anonimato/privacidade.",5,4.5,5,4
+RF-09,"O sistema deve sugerir pratos ao aluno com base em seu histórico de consumo, preferências e restrições declaradas, apresentando essas sugestões na tela principal de cardápio/reserva.",5,5,5,5
+RF-10,"O sistema deve suportar, opcionalmente, a exibição de rankings de popularidade de pratos e a concessão de badges de engajamento para alunos, garantindo que dados pessoais não sejam expostos sem consentimento.",4,4.5,4,4.5

@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir o cadastro de professores, solicitando dados como nome, e-mail institucional, senha e escola vinculada.",4,4,5,5
+RF-02,"O sistema deve permitir o cadastro de alunos, solicitando dados como nome, turma e código de acesso fornecido pelo professor.",4,3.5,5,5
+RF-03,"O sistema deve gerar automaticamente um código de acesso único para cada grupo criado pelo professor, permitindo que os alunos ingressem no grupo correto.",4.5,4.5,5,5
+RF-04,"O sistema deve permitir ao professor visualizar, editar e excluir grupos de alunos, bem como adicionar ou remover alunos manualmente.",4.5,5,5,5
+RF-05,"O sistema deve permitir que o professor crie quizzes personalizados, inserindo perguntas, alternativas, respostas corretas e explicações.",4.5,4,5,5
+RF-06,O sistema deve registrar o progresso e o resultado de cada Aluno nos jogos e quizzes.,4,3.5,5,4
+RF-07,"O sistema deve permitir que o aluno jogue o módulo principal “Aventuras do Dinheirinho”, composto por fases, quizzes e desafios de educação financeira.",4.5,5,5,5
+RF-08,"O sistema deve atribuir pontos, medalhas e recompensas virtuais aos alunos conforme seu desempenho nas atividades e quizzes.",4,4,4,4
+RF-09,"O sistema deve permitir que o professor visualize relatórios individuais e coletivos de desempenho dos alunos, incluindo progresso, acertos e tempo de jogo.",4,4,5,4
+RF-10,O sistema deve permitir que o professor atribua missões temáticas de educação financeira aos grupos ou alunos específicos.,4,3.5,4,3

@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,O sistema deve permitir que um Professor realize seu cadastro na plataforma.,5,4,5,5
+RF-02,O sistema deve permitir que um Aluno realize seu cadastro na plataforma.,5,4,5,5
+RF-03,O sistema deve permitir que usuários (Professores e Alunos) autentiquem-se na plataforma utilizando credenciais de acesso.,5,5,5,5
+RF-04,O sistema deve permitir que o usuário solicite a redefinição de sua senha de acesso.,5,5,5,5
+RF-05,O sistema deve permitir que o usuário encerre sua sessão de forma segura.,5,5,5,5
+RF-06,"O sistema deve permitir que o Professor edite, visualize ou exclua um grupo por ele criado.",5,5,5,5
+RF-07,O sistema deve permitir que o usuário visualize e edite as informações do seu próprio perfil.,5,4,5,5
+RF-08,O sistema deve permitir que o Professor cadastre novas aventuras (quizzes) no sistema.,5,5,5,5
+RF-09,O sistema deve permitir que o Professor edite aventuras por ele cadastradas.,5,5,5,5
+RF-10,O sistema deve permitir que o Professor associe uma aventura a um ou mais grupos.,5,5,5,5

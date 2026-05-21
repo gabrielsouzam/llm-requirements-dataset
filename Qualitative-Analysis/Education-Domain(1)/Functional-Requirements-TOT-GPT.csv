@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir o cadastro de professores, incluindo nome, e-mail institucional, escola, disciplinas e vínculo a turmas.",5,5,5,5
+RF-02,"O sistema deve permitir autenticação segura (login/logout) para todos os perfis (Aluno, Professor, Administrador) usando e-mail e senha.",5,5,5,5
+RF-03,O sistema deve permitir solicitação de recuperação de senha via e-mail com token temporário e redefinição segura.,5,5,5,5
+RF-04,"O sistema deve permitir que cada usuário visualize e edite seus dados de perfil (nome, foto, contato, turma), respeitando as restrições de papel.",5,5,5,5
+RF-05,"O sistema deve implementar controle de acesso por papéis (Aluno, Professor, Coordenador, Administrador) para habilitar/ocultar funcionalidades conforme o papel.",5,5,5,4.5
+RF-06,O sistema deve adaptar a dificuldade e seleção de questões com base no desempenho histórico do aluno (perfis de aprendizado).,5,5,5,4.5
+RF-07,"O sistema deve permitir que professores e administradores criem turmas, importem listas (CSV), adicionem/removam alunos e vejam a composição da turma.",5,5,5,5
+RF-08,"O sistema deve permitir que alunos iniciem quizzes atribuídos, respondam questões, submetam e finalizem o quiz conforme regras definidas pelo professor.",5,5,5,5
+RF-09,"O sistema deve suportar questões de múltipla escolha, verdadeiro/falso, dissertativas, correspondência, arrastar-e-soltar e permitir mídia (imagem, áudio, vídeo) em pergunta/enunciado.",5,5,5,5
+RF-10,"O sistema deve fornecer temporizador por questão/quiz, salvar respostas automaticamente e permitir retomada do quiz se a conexão for interrompida.",5,5,5,4.5

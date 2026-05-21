@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir o cadastro e a gestão de perfis de usuário, distinguindo entre os tipos ""Aluno"" e ""Professor"".",4,4,5,5
+RF-02,"O sistema deve permitir que o professor gere um código de acesso único para cada grupo, permitindo que alunos entrem no grupo correspondente.",4,4,5,5
+RF-03,"O sistema deve permitir que o aluno acesse e navegue pelo módulo de quiz principal ""Aventuras do Dinheirinho"".",4,3,4,4
+RF-04,"O sistema deve permitir que o aluno responda às perguntas dos quizzes presentes no módulo ""Aventuras do Dinheirinho"".",4,3,4,5
+RF-05,O sistema deve permitir que o aluno visualize seu próprio progresso e desempenho nos quizzes e jogos.,4,3.5,4,4.5
+RF-06,"O sistema deve permitir que o professor acesse e gerencie o conteúdo educativo, quizzes e jogos disponíveis para seus grupos.",4,4,5,5
+RF-07,O sistema deve permitir que o professor visualize relatórios de desempenho e progresso de todos os alunos de seus grupos.,4,4,5,5
+RF-08,"O sistema deve conceder pontos, medalhas ou recompensas virtuais aos alunos com base em seu desempenho e progresso nas atividades.",4.5,5,5,4.5
+RF-09,"O sistema deve exibir um ranking de desempenho entre os alunos de um mesmo grupo, promovendo a competição saudável.",4,4,5,4
+RF-10,O sistema deve permitir que o usuário recupere sua senha de acesso através de um processo seguro de verificação por e-mail.,4.5,4.5,5,5

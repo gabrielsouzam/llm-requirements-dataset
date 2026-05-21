@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,O sistema deve permitir que um novo usuário Professor crie uma conta segura fornecendo e-mail e senha.,4,3.5,5,5
+RF-02,O sistema deve permitir que um novo usuário Aluno crie uma conta segura fornecendo um nome de usuário único e senha.,4,4,4,5
+RF-03,O sistema deve permitir que usuários (Professor e Aluno) se autentiquem na plataforma usando suas credenciais.,4,4,4,5
+RF-04,O sistema deve fornecer um mecanismo de redefinição de senha (ex: via e-mail) para usuários que a esqueceram.,4,4.5,5,4.5
+RF-05,"O sistema deve gerar um código de acesso alfanumérico único para cada grupo, a ser usado pelo aluno para entrar.",4.5,4.5,5,5
+RF-06,"O sistema deve permitir que o Aluno inicie ou continue um módulo de quiz (""Aventura"") que tenha sido atribuído ao seu grupo.",5,5,5,5
+RF-07,O sistema deve permitir que o Aluno selecione uma opção de resposta em um quiz e a submeta para verificação.,5,4.5,5,5
+RF-08,"O sistema deve exibir ao Professor um painel consolidado com o desempenho médio, taxa de conclusão e engajamento dos alunos em seu grupo.",5,5,5,5
+RF-09,O sistema deve permitir que o Professor selecione um aluno específico do grupo para visualizar seu progresso detalhado e histórico de respostas.,5,5,5,4.5
+RF-10,"O sistema deve exibir um ranking (tabela de classificação) visível para Professores e Alunos, classificando os membros do grupo com base na pontuação ou progresso (gamificação).",4.5,4.5,5,5

@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que alunos atualizem seus dados pessoais (nome, e-mail, telefone, curso) e informações de contato, respeitando validação e histórico de alterações.",5,5,5,5
+RF-02,"O sistema deve disponibilizar mecanismo seguro de recuperação e redefinição de senha (por e-mail ou outro método institucional), incluindo verificação de identidade.",5,4,5,5
+RF-03,"O sistema deve permitir que administradores criem e gerenciem contas administrativas (por exemplo: administrador, cozinheiro, atendente, auditor), atribuindo permissões específicas para cada papel.",5,5,5,5
+RF-04,"O sistema deve exibir, para cada item do cardápio, informações detalhadas de ingredientes, alérgenos, valor energético (calorias) e informação de porções, visível tanto para alunos quanto para equipe.",5,4,5,5
+RF-05,"O sistema deve registrar e permitir consulta da origem dos principais insumos por prato (fornecedor / lote), para fins de rastreabilidade e transparência.",5,4,5,4
+RF-06,"O sistema deve permitir o registro de presença no momento do consumo por QR code, leitura de matrícula, ou confirmação manual pelo atendente, vinculando o check-in à reserva ou indicação prévia.",5,4,5,5
+RF-07,"O sistema deve controlar a fila de atendimento no refeitório, priorizando usuários com reserva/indicação, exibindo tempo estimado de espera e permitindo que atendentes gerenciem chamadas e exceções.",5,4,5,5
+RF-08,"O sistema deve manter e disponibilizar o histórico de refeições consumidas por cada aluno (data, turno, prato consumido, presença/ausência), acessível ao aluno e à administração.",5,4,5,5
+RF-09,"O sistema deve aplicar regras de cancelamento automático de reservas não confirmadas dentro de prazos configuráveis (por ex.: X horas antes), liberando vagas e atualizando relatórios.",5,4,5,5
+RF-10,"O sistema deve enviar notificações (push/email/SMS) para alunos sobre confirmações, lembretes de reserva, alterações de cardápio, encerramento de prazo para cancelamento e avisos operacionais.",5,4,5,5

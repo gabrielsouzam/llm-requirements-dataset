@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,O sistema deve permitir que o aluno visualize e edite suas informações pessoais cadastradas e altere sua senha de acesso.,5,4,5,5
+RF-02,"O sistema deve disponibilizar ao aluno um histórico completo e consultável de todas as suas reservas, comparecimentos e refeições consumidas.",5,4,5,5
+RF-03,O sistema deve permitir que o aluno avalie (ex.: nota de 1 a 5) e comente sobre a refeição consumida em um dia e horário específicos.,5,5,5,5
+RF-04,O sistema deve permitir que os alunos visualizem a avaliação média e comentários recentes associados a cada prato ou opção do cardápio.,5,4,5,5
+RF-05,"O sistema deve exibir, para cada item do cardápio, a lista completa de ingredientes e informações sobre alérgenos comuns (ex.: contém glúten, lactose).",5,4,5,5
+RF-06,"O sistema deve alertar visualmente o aluno, durante a consulta ao cardápio, caso um item contenha ingredientes que conflitem com as restrições alimentares registradas em seu perfil.",5,4,5,5
+RF-07,"O sistema deve permitir que o aluno registre sua presença no restaurante (check-in) no horário da refeição reservada, por meio de um mecanismo válido (ex.: leitura de QR Code), para confirmar o consumo.",5,5,5,5
+RF-08,"O sistema deve fornecer uma interface para a administração controlar o fluxo de entrada no salão, permitindo sinalizar quando novos grupos podem entrar, com base na lotação e no andamento da fila.",5,5,5,5
+RF-09,"O sistema deve permitir que a administração cadastre, edite e publique os cardápios para datas e horários de refeição (almoço e jantar) futuros.",5,5,5,5
+RF-10,"O sistema deve disponibilizar à administração um painel (dashboard) com a demanda esperada, o número de check-ins realizados e a lotação atual do restaurante para o horário da refeição em andamento.",5,4,5,5

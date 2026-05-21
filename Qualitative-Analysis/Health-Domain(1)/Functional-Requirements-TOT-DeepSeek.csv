@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir que o usuário crie e gerencie seu perfil, incluindo o cadastro e edição de dados pessoais, histórico médico relevante, medicamentos em uso e preferências de notificação.",4.5,4,5,5
+RF-02,"O sistema deve permitir que o paciente registre manualmente métricas de saúde diárias, como pressão arterial, frequência cardíaca, peso e sintomas subjetivos, armazenando esses dados em um histórico temporal.",5,4.5,5,4.5
+RF-03,"O sistema deve fornecer uma dashboard para o usuário visualizar seu histórico de métricas de saúde e da triagem inicial em formato de gráficos, permitindo identificar tendências e evoluções.",5,5,5,5
+RF-04,"O sistema deve disponibilizar uma biblioteca organizada por categorias (doenças, procedimentos, prevenção) contendo artigos, infográficos e vídeos educativos sobre saúde cardiovascular.",5,4.5,5,5
+RF-05,"O sistema deve, a partir da visualização interativa 2D, permitir que o usuário selecione artérias coronárias específicas para visualizar detalhes de lesões, como formação de placas arteriais e coágulos.",4.5,4.5,5,5
+RF-06,"O sistema deve oferecer módulos educativos que expliquem, através de sequências de passos com texto e imagens, os detalhes de procedimentos cirúrgicos cardíacos comuns",4,4,4.5,4
+RF-07,"O sistema deve permitir que o usuário marque e desmarque conteúdos educativos, visualizações interativas e clínicas como ""Favoritos"", fornecendo uma seção dedicada para acesso rápido a esses itens.",4.5,4.5,5,4.5
+RF-08,"O sistema deve disponibilizar um formulário para que o usuário envie feedback, sugestões e relate problemas técnicos diretamente para a equipe de desenvolvimento.",4.5,4,4,4
+RF-09,"O sistema deve prover um espaço de comunidade onde os usuários possam criar postagens de texto, comentar em publicações de outros usuários e interagir através de um sistema de ""reação"" (ex: curtir), mantendo um ambiente de suporte e troca de experiências.",5,5,5,5
+RF-10,"O sistema deve enviar notificações push personalizadas para o usuário, baseadas em seu perfil e preferências, com lembretes de medicamentos, incentivos para hábitos saudáveis e alertas sobre fatores de risco.",5,5,5,5

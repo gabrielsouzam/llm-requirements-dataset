@@ -1,0 +1,11 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve permitir o cadastro de alunos com dados básicos (nome, e-mail, turma/grupo opcional, data de nascimento, consentimento de responsável quando necessário).",5,5,5,5
+RF-02,"O sistema deve permitir o cadastro de professores com dados profissionais (nome, e-mail institucional, escola, disciplinas), e atribuição de turmas.",5,5,5,5
+RF-03,"O sistema deve permitir que usuários autenticados façam login e logout usando e-mail e senha, com manutenção de sessão segura.",5,5,5,5
+RF-04,O sistema deve oferecer mecanismo de recuperação de senha via e-mail (reset token expirável).,5,5,5,5
+RF-05,"O sistema deve permitir que alunos e professores editem seu perfil (foto, nome, e-mail de contato, preferências) e alterem a senha.",5,5,5,5
+RF-06,"O sistema deve permitir que professores criem, editem e removam turmas/salas, atribuindo alunos e configurando metadados (ano, disciplina).",5,5,5,5
+RF-07,O sistema deve permitir importação em massa de alunos por arquivo CSV e envio de convites por link ou e-mail para ingressar na turma.,5,5,5,5
+RF-08,O sistema deve permitir que o professor gere e invalide códigos de acesso para que alunos entrem em grupos.,5,5,5,5
+RF-09,"O sistema deve permitir que professores criem, leiam, atualizem e excluam quizzes (título, descrição, tempo, regras de pontuação, público alvo).",5,5,5,5
+RF-10,"O sistema deve permitir criação, edição e exclusão de questões (múltipla escolha, verdadeiro/falso, abertas), com marcação de níveis de dificuldade e tags.",5,5,5,5

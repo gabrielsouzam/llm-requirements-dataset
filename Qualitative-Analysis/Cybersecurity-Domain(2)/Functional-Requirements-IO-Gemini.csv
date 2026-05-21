@@ -1,0 +1,29 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"A Aplicação deve ler e analisar um arquivo de configuração (ex: fakenet.ini) na inicialização.
+1. Se o arquivo de configuração não for encontrado ou contiver erros de sintaxe, a Aplicação deve registrar um erro fatal e terminar.
+2. Todas as configurações (ex: quais Listeners ativar, configurações do Diverter) devem ser carregadas a partir deste arquivo.",5,4.5,4.5,4.5
+RF-02,"A Aplicação deve iterar sobre a lista de Listeners definidos na configuração.
+1. Apenas os Listeners marcados como ""enabled"" (habilitados) na configuração devem ser iniciados.
+2. Cada Listener iniciado deve ser registrado pela Aplicação para futuro gerenciamento (ex: durante o desligamento)",5,4,4,5
+RF-03,"A Aplicação deve fornecer um serviço de log configurável (ex: nível de verbosidade, saída para arquivo ou console).
+1. O Diverter e todos os Listeners devem usar este serviço centralizado para registrar eventos operacionais, erros e, o mais importante, a atividade do malware.",3,5,4,5
+RF-04,"Quando habilitado (DivertTraffic), o Diverter deve:
+1. Interceptar todos os pacotes TCP e UDP de saída originados na máquina local.
+2. Modificar os pacotes para que sejam redirecionados para o endereço IP e porta do Listener apropriado (geralmente o Proxy Listener) em execução na máquina local.",4,3.5,4,4.5
+RF-05,"O Diverter deve suportar uma configuração opcional para filtrar o tráfego com base no processo de origem.
+1. Se uma ""lista branca"" de processos (por nome de executável) for fornecida, apenas o tráfego desses processos será redirecionado.
+2. Se uma ""lista negra"" for fornecida, o tráfego desses processos será ignorado pelo Diverter e autorizado a sair para a Internet.",4.5,5,4,4.5
+RF-06,"Ao receber uma nova conexão (TCP ou UDP) do Diverter:
+1. O Proxy Listener deve apresentar uma amostra inicial dos dados da conexão ao método taste() de cada Listener habilitado, em ordem de prioridade.
+2. A conexão deve ser permanentemente encaminhada ao primeiro Listener que retornar True (indicando que reconhece o protocolo).",4,4.5,4.5,5
+RF-07,"Se nenhum Listener habilitado ""aceitar"" o tráfego (ou seja, nenhum método taste() retornar True):
+1. O Proxy Listener deve encaminhar a conexão para um Listener ""Default"" configurável (ex: um listener genérico que apenas registra os dados e fecha a conexão).",4.5,4.5,4,5
+RF-08,"Todos os Listeners devem registrar em log as interações do cliente.
+1. O log deve incluir o IP e a porta de origem.
+2. Os dados recebidos do cliente e os dados enviados como resposta devem ser registrados (em formato legível ou hexadecimal para dados binários).",5,4.5,4.5,4.5
+RF-09,"Listeners que manipulam protocolos que comumente transferem arquivos (ex: HTTP, FTP, SMB) devem:
+1. Ter uma configuração booleana para habilitar o ""despejo"" (dumping) de arquivos.
+2. Quando habilitado, salvar os payloads de arquivos recebidos em um diretório configurável no disco para análise posterior.",4,4,4,5
+RF-10,"O Listener DNS deve:
+1. Aceitar requisições DNS (UDP/53 e TCP/53).
+2. Para qualquer consulta de nome de host (tipo A ou AAAA), deve responder com um único endereço IP configurável (tipicamente, o endereço IP local da máquina FakeNet-NG).",5,5,5,5

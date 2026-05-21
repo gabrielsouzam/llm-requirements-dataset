@@ -1,0 +1,8 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve disponibilizar um repositório categorizado de artigos, vídeos e infográficos sobre saúde cardiovascular, permitindo que estudantes e pacientes consumam material teórico detalhado sobre procedimentos e patologias.",5,5,5,5
+RF-02,"O sistema deve permitir que o usuário crie, edite e gerencie sua conta, incluindo dados pessoais básicos e preferências de uso, garantindo a personalização da experiência conforme o perfil (Paciente ou Estudante).",5,4,5,5
+RF-03,"O sistema deve armazenar e apresentar, em formato de linha do tempo ou dashboard, o histórico das avaliações realizadas na ""Triagem Inteligente"", permitindo ao paciente visualizar a evolução de seus sintomas ou fatores de risco.",4.5,4.5,4,5
+RF-04,"O sistema deve prover um espaço de fórum moderado onde usuários possam compartilhar relatos e dúvidas, categorizados por tópicos (ex: ""Pré-operatório"", ""Vida Saudável""), fomentando a troca de experiências mencionada no escopo.",5,5,5,5
+RF-05,"O sistema deve enviar notificações push configuráveis para lembrar o usuário de realizar monitoramentos diários, ler novos conteúdos educativos ou engajar-se em quizzes pendentes.",4.5,4.5,4,5
+RF-06,"O sistema deve permitir que o usuário marque clínicas, artigos educativos ou condições específicas como ""Favoritos"" para acesso rápido posterior.",5,4.5,5,4.5
+RF-07,"O sistema deve integrar uma funcionalidade de Text-to-Speech (texto para fala) nos materiais educativos e resultados de triagem, facilitando o acesso à informação para usuários idosos ou com dificuldades visuais.",5,4.5,5,5

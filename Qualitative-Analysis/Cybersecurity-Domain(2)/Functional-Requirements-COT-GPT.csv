@@ -1,0 +1,51 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"A Aplicação deve suportar carregamento de configuração via arquivo (YAML/JSON/TOML) e linha de comando (--config <path>). Ao iniciar, a Aplicação deve:
+1. Validar o schema da configuração; se inválida, abortar o start e apresentar erro descritivo.
+2. Suportar profiles (ex.: development, production) e sobrescritas por variáveis de ambiente.
+3. Expor um comando/endpoint para reload dinâmico da configuração em runtime (via SIGHUP e via API/CLI). O reload deve validar a nova configuração antes de aplicá-la e reverter automaticamente para a anterior em caso de falha.",5,4.5,4.5,4.5
+RF-02,"A Aplicação deve expor mecanismos de controle operacional:
+1. Interface CLI para iniciar, parar, reiniciar, listar status e exportar configuração atual.
+2. Um socket de controle local (UNIX domain socket) para comandos programáticos (start/stop/status/reload), protegido por permissões de SO ou autenticação.
+3. Opcionalmente, um endpoint REST administrativo protegido (API key ou TLS mTLS) para integração com automação.
+4. Todas as ações administrativas devem ser registradas no log de auditoria com usuário/actor, timestamp e resultado.",4.5,4.5,4.5,4.5
+RF-03,"Além do SIGINT (Control-C), a Aplicação deve:
+1. Responder a SIGTERM com o mesmo comportamento de shutdown gracioso descrito nos exemplos.
+2. Responder a SIGHUP efetuando reload de configuração (sem reiniciar o processo) com validação e rollback em caso de erro.
+3. Garantir que operações de shutdown sejam idempotentes e que não deixem a rede local em estado inconsistente (sempre reverter alterações de roteamento/iptables).",4,4.5,4,4.5
+RF-04,"O Diverter deve implementar um motor de regras configurável que:
+1. Permita regras ordenadas com critérios de match: IP de origem/destino, porta, protocolo (TCP/UDP/ICMP), e expressão sobre payload (regex/byte-mask).
+2. Suporte ações por regra: divert -> <listener>, drop, forward -> <upstream>, modify -> <spec>, log.
+3. Permita whitelists/blacklists e prioridade entre regras (priority/weight).
+4. Ofereça hot-reload de regras sem reiniciar o Diverter e com rollback em caso de erro de validação.",5,5,5,5
+RF-05,"O Diverter deve:
+1. Suportar operações de modificação de pacote configuráveis (alterar IP/porta, reescrever payload, ajustar headers).
+2. Implementar mecanismos de NAT/transparência quando necessário (modo transparent), preservando consistência das sessões.
+3. Garantir que quaisquer alterações sejam registradas (antes e depois) quando DumpPackets estiver habilitado.",4.5,4.5,4.5,4
+RF-06,"O Diverter deve operar em pelo menos três modos selecionáveis por configuração:
+1. passive: apenas snifa e registra tráfego (não redireciona).
+2. divert: redireciona tráfego conforme regras para Listeners.
+3. transparent: intercepta e reescreve fluxo (NAT) de modo a permanecer invisível ao endpoint.
+
+Cada modo deve ser selecionável em runtime e registrado no log.",5,5,5,5
+RF-07,"Quando DumpPackets estiver habilitado, o Diverter deve:
+1. Gerar arquivos .pcap contendo snapshots do tráfego original e, se modificado, do tráfego final.
+2. Suportar rotação por tamanho e por tempo (ex.: 100MB ou 1 hora), compressão opcional e política de retenção configurável.
+3. Incluir metadados por fluxo (correlation_id, listener_dest, decisão_de_rota) no index associado ao pcap.
+4. Opcionalmente anonimizar campos sensíveis antes de gravar (configuração por regex).",5,5,4.5,4.5
+RF-08,"Todos os Listeners devem permitir definição de comportamento de resposta por configuração:
+1. Resposta estática (conteúdo fixo).
+2. Template com placeholders preenchidos dinamicamente (ex.: host, timestamp).
+3. Script sandboxed (ex.: Lua/JS/Python) para respostas dinâmicas baseadas no payload. Scripts devem executar em sandbox com limites de CPU/memória.
+4. Estado por sessão (cookies, conexões persistentes) quando aplicável, com TTL configurável.
+5. Delay configurável e taxa de erro (probabilística) para simular instabilidade do serviço.",4,4.5,4.5,5
+RF-09,"Cada Listener que suporte TLS deve expor política configurável:
+1. terminate — o Listener termina a TLS (MITM) usando certificado gerado/simulado.
+2. passthrough — o Listener passa o fluxo cifrado para o upstream sem inspeção.
+3. inspect — o Listener tenta fazer MITM se credenciais permitirem; caso contrário, aplica fallback configurável.
+
+A gestão de certificados simulados (geração/rotação) deve ser suportada pela Aplicação.",4,4.5,5,4
+RF-10,"O Proxy Listener deve:
+1. Implementar taste() para amostrar dados iniciais e identificar o Listener adequado.
+2. Manter cache de resultados de taste() por fluxo (TTL configurável) para evitar recomputação.
+3. Aplicar timeout configurável para a identificação; se falhar, aplicar política de fallback (drop, forward upstream, enviar para sinkhole).
+4. Registrar a decisão de roteamento e o motivo no log/auditoria.",5,4,4.5,4.5

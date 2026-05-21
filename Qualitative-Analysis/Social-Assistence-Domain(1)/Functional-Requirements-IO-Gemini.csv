@@ -1,0 +1,31 @@
+﻿ID,Description,Clarity,Completeness,Consistency,Relevance
+RF-01,"O sistema deve exibir páginas de conteúdo estático para que o visitante possa conhecer a história, missão, valores e a equipe da Casa da Caridade. Isso é essencial para o objetivo de ""aumentar a credibilidade"". A navegação para estas páginas (ex: ""Quem Somos"", ""Nossa História"") deve estar clara no menu principal.",5,5,5,5
+RF-02,"O sistema deve fornecer um formulário de contato para o visitante enviar dúvidas, sugestões ou ofertas de ajuda. O formulário deve solicitar:
+• Nome completo
+• Endereço de e-mail
+• Assunto
+• Mensagem
+O sistema deve validar o formato do e-mail e garantir que todos os campos obrigatórios sejam preenchidos antes de enviar a mensagem para um e-mail administrativo da Casa da Caridade.",5,5,5,4.5
+RF-03,"Para ""registrar e evidenciar todo o trabalho social"", o sistema deve exibir uma área de transparência. Esta página deve permitir que o visitante visualize relatórios simplificados (preparados pelo Administrador) sobre:
+• Total de doações recebidas em um período (ex: mês/ano).
+• Principais ações realizadas com os recursos.
+• Número de pessoas assistidas.
+Esta página não deve expor dados pessoais de doadores.",4.5,5,5,5
+RF-04,"O sistema deve prover uma página de login onde usuários e administradores possam se autenticar. O formulário deve solicitar ""E-mail"" e ""Senha"". O sistema deve validar as credenciais e redirecionar o usuário para sua respectiva área (painel do usuário ou painel administrativo).",5,5,5,5
+RF-05,"Na página de login, deve haver um link ""Esqueci minha senha"". Ao clicar, o usuário deve ser direcionado para uma tela onde insere seu e-mail cadastrado. O sistema deve verificar se o e-mail existe e enviar um link de redefinição de senha para o e-mail do usuário. O link deve ter validade limitada (ex: 1 hora).",5,5,5,5
+RF-06,"Após o login, o usuário cadastrado deve ter acesso a uma página de ""Meu Perfil"". Nesta página, ele deve ser capaz de:
+• Atualizar seu nome.
+• Alterar sua senha (solicitando a senha atual e a nova).
+• Gerenciar suas preferências de comunicação (ex: optar por não receber mais novidades).
+• Excluir sua conta do sistema.",5,5,5,5
+RF-07,"O sistema deve permitir que o administrador, no painel administrativo, visualize uma lista de todas as ações cadastradas. O administrador deve ter a capacidade de:
+• Editar: Alterar qualquer informação de uma ação de caridade já existente.
+• Excluir: Remover permanentemente uma ação de caridade do sistema (o sistema deve solicitar confirmação).",5,5,5,5
+RF-08,O painel administrativo deve possuir uma seção para que o administrador possa editar o conteúdo das páginas institucionais e as informações de contato.,4,4,5,4.5
+RF-09,"O sistema deve permitir ao administrador registrar manualmente outras formas de doação (ex: cestas básicas, roupas, brinquedos) para fins de ""registrar todo o trabalho social"". O formulário deve solicitar:
+• Tipo de doação (item, serviço).
+• Descrição.
+• Quantidade (se aplicável).
+• Data do recebimento.
+• Informações do doador (opcional, com consentimento).",5,5,5,5
+RF-10,"O administrador deve ter uma funcionalidade para criar e publicar os relatórios de transparência. O sistema deve permitir ao administrador inserir dados agregados (ex: ""Total arrecadado em Janeiro: R$ http://x.xxx/,XX"") e uma descrição de como os fundos foram utilizados.",4.5,5,5,4.5
